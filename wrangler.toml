@@ -7,9 +7,10 @@ compatibility_date = "2025-08-09"
 binding = "SCANS_KV"
 id = "f9ac538dfe334910b80ee906368a4846" # set after creating KV via wrangler or dashboard
 
-[[durable_objects.bindings]]
-name = "SCAN_POLL_DO"
-class_name = "ScanPollDO"
+[durable_objects]
+bindings = [
+  { name = "SCAN_POLL_DO", class_name = "ScanPollDO" }
+]
 
 [[migrations]]
 tag = "v1" # Should be unique for each entry
