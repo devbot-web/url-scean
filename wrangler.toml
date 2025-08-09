@@ -1,0 +1,19 @@
+name = "urlscanner"
+main = "src/index.js"
+compatibility_date = "2025-08-09"
+
+# Bindings (replace values when creating in dashboard / CLI)
+[[kv_namespaces]]
+binding = "SCANS_KV"
+id = "" # set after creating KV via wrangler or dashboard
+
+[durable_objects]
+bindings = [
+  { name = "SCAN_POLL_DO", class_name = "ScanPollDO" }
+]
+
+[vars]
+# If you want to provide non-secret defaults, add here. Secrets should be set via `wrangler secret put`.
+TELEGRAM_BOT_TOKEN = ""
+CF_API_TOKEN = ""
+CF_ACCOUNT_ID = ""
