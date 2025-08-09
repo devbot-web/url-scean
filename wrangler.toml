@@ -16,8 +16,3 @@ bindings = [
 tag = "v1"
 new_sqlite_classes = ["ScanPollDO"]
 
-[vars]
-# If you want to provide non-secret defaults, add here. Secrets should be set via `wrangler secret put`.
-TELEGRAM_BOT_TOKEN = "8413907720:AAGfZaBBlJ3fmT-cqQ2xTzCh1uH7iECIrXM"
-CF_API_TOKEN = "YjBvkHQJOpQ7xjd4rBJz68nop_WPIOEo4cXfRbx0"
-CF_ACCOUNT_ID = "928a863ccd1d06b1cc31ade9cbdf4726"
