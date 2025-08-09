@@ -1,6 +1,7 @@
 name = "urlscanner"
 main = "src/index.js"
 compatibility_date = "2025-08-09"
+compatibility_flags = [ "nodejs_als" ]
 
 [[kv_namespaces]]
 binding = "SCANS_KV"
