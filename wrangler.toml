@@ -1,7 +1,6 @@
 name = "urlscanner"
 main = "src/index.js"
 compatibility_date = "2025-08-09"
-main_module = "src/index.js"  # 👈 important for ES module
 
 [[kv_namespaces]]
 binding = "SCANS_KV"
@@ -11,6 +10,10 @@ id = "f9ac538dfe334910b80ee906368a4846"
 bindings = [
   { name = "SCAN_POLL_DO", class_name = "ScanPollDO" }
 ]
+
+[[migrations]]
+tag = "v1"
+new_sqlite_classes = ["ScanPollDO"]
 
 [vars]
 # If you want to provide non-secret defaults, add here. Secrets should be set via `wrangler secret put`.
