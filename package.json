@@ -1,0 +1,14 @@
+{
+  "name": "urlscanner",
+  "version": "1.0.0",
+  "description": "A production-ready Telegram bot using Cloudflare Workers and URL Scanner API",
+  "type": "module",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler publish"
+  },
+  "devDependencies": {
+    "wrangler": "^3.57.1"
+  },
+  "license": "MIT"
+}
